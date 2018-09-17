@@ -37,8 +37,9 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 
     float a = sin(TIME * 5.0) * 0.5 + 0.5;
     p = rotation(p, mix(0., 360., sin(TIME)));
+    
     vec2 d = morphing(p);
-    vec3 color = mix(vec3(1), vec3(0), step(d.y, d.x));
+    vec3 color = mix(vec3(1, 0.5, 0), vec3(0.3, 0.8, 1), step(d.y, d.x));
 
     fragColor = vec4(color, 1.0);
 }
