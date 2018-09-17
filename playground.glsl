@@ -33,9 +33,10 @@ vec2 morphing(vec2 p) {
 
 void mainImage(out vec4 fragColor, in vec2 fragCoord) {
     vec2 p = (fragCoord.xy * 2.0 - iResolution.xy) / min(iResolution.x, iResolution.y);
-	
+	TIME = iTime;
+
     float a = sin(TIME * 5.0) * 0.5 + 0.5;
-    p = rotation(p, mix(0., 1., sin(TIME)));
+    p = rotation(p, mix(0., 360., sin(TIME)));
     vec2 d = morphing(p);
     vec3 color = mix(vec3(1), vec3(0), step(d.y, d.x));
 
