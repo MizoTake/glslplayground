@@ -7,8 +7,8 @@
 	"settings": {
 		"glsl-canvas.textures": {
 			"0": "./texture.png",
-			"1": "https://rawgit.com/actarian/plausible-brdf-shader/master/textures/noise/cloud-1.png",
-			"2": "https://rawgit.com/actarian/plausible-brdf-shader/master/textures/noise/cloud-2.jpg",
+			"1": "https://cdn.jsdelivr.net/gh/actarian/plausible-brdf-shader/textures/noise/cloud-1.png",
+			"2": "https://cdn.jsdelivr.net/gh/actarian/plausible-brdf-shader/textures/noise/cloud-2.jpg",
 		}
 	}
 }
